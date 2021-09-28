@@ -1,20 +1,21 @@
-name: Deploy to GH Pages
+name: Deploy to GitHub Pages
+
 on: [push]
+
 jobs:
-  Explore-GitHub-Actions:
+  release:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-      - name: CD into code
-        run: cd ${{ github.workspace }}
       - name: Setup Node
         uses: actions/setup-node@v2
       - name: Install
-        run: npm i
+        run: npm install
       - name: Build
         run: npm run build
-      - name: Deploy to GH Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
