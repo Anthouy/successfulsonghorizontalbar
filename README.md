@@ -1,6 +1,6 @@
 # a3-template
 
-Template For Assignment 3. It comes pre-loaded with D3 and Vega.
+Template for Assignment 3. It comes pre-loaded with D3 and Vega.
 
 ## Setup
 
@@ -16,4 +16,4 @@ To run it, use the following commands:
 
 You can add any changes to github using `git add .` and `git commit -m "message"` and `git push origin master`.
 
-Please email cabrera@cmu.edu if you run into any issues, or come to office hours for debugging.
+Please email [cabrera@cmu.edu](mailto:cabrera@cmu.edu) if you run into any issues, or come to office hours for debugging.
