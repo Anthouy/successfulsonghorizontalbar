@@ -4,6 +4,10 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: CD into code
+        run: cd ${{ github.repository }}
       - name: Setup Node
         uses: actions/setup-node@v2
       - name: Install
