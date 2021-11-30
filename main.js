@@ -117,3 +117,13 @@ function BarChart(data, {
 
   return svg.node();
 }
+
+chart = BarChart(number, {
+  x: d => d.cnt,
+  y: d => d.id,
+  yDomain: d3.groupSort(number, ([d]) => -d.cnt, d => d.id), // sort by descending frequency
+  xFormat: "",
+  xLabel: "Number of Years in Top 100",
+  width,
+  color: "steelblue"
+})
